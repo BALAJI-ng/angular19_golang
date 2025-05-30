@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+p::before{
+    content: "O";
+    color: black; /* You can change the color of the bullet here */
+    font-weight: bold; /* Optional: make the bullet bold */
+    padding:15px;
+    }
+
+p{
+    line-height: 2em; 
+}

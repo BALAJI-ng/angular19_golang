@@ -1,0 +1,274 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+    :host {
+        --bright-blue: oklch(51.01% 0.274 263.83);
+        --electric-violet: oklch(53.18% 0.28 296.97);
+        --french-violet: oklch(47.66% 0.246 305.88);
+        --vivid-pink: oklch(69.02% 0.277 332.77);
+        --hot-red: oklch(61.42% 0.238 15.34);
+        --orange-red: oklch(63.32% 0.24 31.68);
+
+        --gray-900: oklch(19.37% 0.006 300.98);
+        --gray-700: oklch(36.98% 0.014 302.71);
+        --gray-400: oklch(70.9% 0.015 304.04);
+
+        --red-to-pink-to-purple-vertical-gradient: linear-gradient(180deg,
+                var(--orange-red) 0%,
+                var(--vivid-pink) 50%,
+                var(--electric-violet) 100%);
+
+        --red-to-pink-to-purple-horizontal-gradient: linear-gradient(90deg,
+                var(--orange-red) 0%,
+                var(--vivid-pink) 50%,
+                var(--electric-violet) 100%);
+
+        --pill-accent: var(--bright-blue);
+
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Symbol";
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1 {
+        font-size: 3.125rem;
+        color: var(--gray-900);
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: -0.125rem;
+        margin: 0;
+        font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Symbol";
+    }
+
+    p {
+        margin: 0;
+        color: var(--gray-700);
+    }
+
+    main {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        box-sizing: inherit;
+        position: relative;
+    }
+
+    .angular-logo {
+        max-width: 9.2rem;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 3rem;
+    }
+
+    .content h1 {
+        margin-top: 1.75rem;
+    }
+
+    .content p {
+        margin-top: 1.5rem;
+    }
+
+    .divider {
+        width: 1px;
+        background: var(--red-to-pink-to-purple-vertical-gradient);
+        margin-inline: 0.5rem;
+    }
+
+    .pill-group {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+    }
+
+    .pill {
+        display: flex;
+        align-items: center;
+        --pill-accent: var(--bright-blue);
+        background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
+        color: var(--pill-accent);
+        padding-inline: 0.75rem;
+        padding-block: 0.375rem;
+        border-radius: 2.75rem;
+        border: 0;
+        transition: background 0.3s ease;
+        font-family: var(--inter-font);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.4rem;
+        letter-spacing: -0.00875rem;
+        text-decoration: none;
+    }
+
+    .pill:hover {
+        background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
+    }
+
+    .pill-group .pill:nth-child(6n + 1) {
+        --pill-accent: var(--bright-blue);
+    }
+
+    .pill-group .pill:nth-child(6n + 2) {
+        --pill-accent: var(--french-violet);
+    }
+
+    .pill-group .pill:nth-child(6n + 3),
+    .pill-group .pill:nth-child(6n + 4),
+    .pill-group .pill:nth-child(6n + 5) {
+        --pill-accent: var(--hot-red);
+    }
+
+    .pill-group svg {
+        margin-inline-start: 0.25rem;
+    }
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        gap: 0.73rem;
+        margin-top: 1.5rem;
+    }
+
+    .social-links path {
+        transition: fill 0.3s ease;
+        fill: var(--gray-400);
+    }
+
+    .social-links a:hover svg path {
+        fill: var(--gray-900);
+    }
+
+    @media screen and (max-width: 650px) {
+        .content {
+            flex-direction: column;
+            width: max-content;
+        }
+
+        .divider {
+            height: 1px;
+            width: 100%;
+            background: var(--red-to-pink-to-purple-horizontal-gradient);
+            margin-block: 1.5rem;
+        }
+    }
+</style>
+
+<h1>Angular Latest Concepts</h1>
+Balaji
+<app-rxjs-4></app-rxjs-4>
+
+<h3>Redux - Store</h3>
+
+<app-rxjs-3></app-rxjs-3>
+<app-ng-rxredux-store></app-ng-rxredux-store>
+
+<h3>RXJS</h3>
+
+<app-rxjs-2></app-rxjs-2>
+
+<h4>Signals</h4>
+<p>Example whole home vs individual room</p>
+<p>eliminate unnecessary change detection,</p>
+<p>Replace of Zone.js - try using onpush strategy - this will stop change detection</p>
+<p>But signals will still work </p>
+<p>This First Name will change after 5 seconds using signal <b>{{firstName()}}</b></p>
+<p>You can also bind value from TS file - <input type="text" [value]="myKid()"></p>
+<p>SET - set simple value</p>
+<p>UPDATE - update val => valu * 2 * 4</p>
+
+<p>{{userName()}}</p>
+<p> disabled button using boolean signal <button [disabled]="isValidUser()">Save changes</button></p>
+<br>
+<h4>Computed Signals</h4>
+<p>good for calculation</p>
+<p>Produce its value based on other signals</p>
+<p>Read only - dont have update or set</p>
+<p>Convert to upper case </p>
+
+<h3>Control Flow - ngIf else</h3>
+
+
+@if(myBoolean){
+<p>This is IF part -- This tag is enabled based on AT-ngIF</p>
+}
+@else {
+<p>This is Else part -- This tag is enabled based on AT-ngIF</p>
+}
+
+<h3>Control Flow - FOR</h3>
+
+<p>AT For (array of arrays(); track array.id)</p>
+<p>array.name</p>
+@for (array of arrays; track array.id){
+<p>{{array.name}}</p>
+}
+
+
+
+
+<h3>Resource </h3>
+<p>API dealing with async data loading from server</p>
+<p>{{myAPIData.value()?.name}}</p>
+
+<p>There are two resource (Promise) & rx resources (Observables) </p>
+<p>SIGNAL based Async operation</p>
+<app-resource-and-rx-resource></app-resource-and-rx-resource>
+
+<h3>Signal with ng Model two way binding</h3>
+<p>{{sampleSignal()}} <br></p>
+<p><input [value]="sampleSignal()" [(ngModel)]="sampleSignal"></p>
+
+
+<h3>Inject in Angular</h3>
+<p>{{injectResult}} <br></p>
+<p>convert constructor-based injection, Simplified code</p>
+<p>use in field inilizator</p>
+<p>more accurate type inference, reducing the chances of runtime errors caused by incorrect types.</p>
+<p>private calculator = inject(CalculatorService); </p>
+<p>injectResult = this.calculator.addSum(10, 20)</p>
+
+<h3>linked Signal</h3>
+<p>combination of Signals + computed signals</p>
+<p>Automatically sunc with other signals when SOURCE signals change</p>
+<div><img class="rotate" style="width: auto; height: auto;" crossorigin="anonymous"
+        src="assets/images/linked_signals.png" alt="linked signal" />
+</div>
+
+
+<h3>RBAC - Role Back Authorization Control</h3>
+<button (click)="login('user')">Login as User</button>
+<button (click)="login('admin')">Login as Admin</button>
+<button (click)="logout()">Logout</button>
+
+<div *ngIf="authService.hasRole('USER')">Welcome, User!</div>
+<div *ngIf="authService.hasRole('ADMIN')">Welcome, Admin!</div>
+
+<h3>CSS Combinators1</h3>
+Tyry playing with styleUrl: './css-combinators.component.scss' and see how styles are applying
+
+<app-css-combinators></app-css-combinators>
+
+<h3>At Input and At Output</h3>
+<app-parent-atinput></app-parent-atinput>

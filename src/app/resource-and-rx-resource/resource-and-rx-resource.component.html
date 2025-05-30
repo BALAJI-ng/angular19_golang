@@ -1,0 +1,53 @@
+<table border="1">
+    <tbody>
+        <tr>
+            <th>Resource</th>
+            <th>RX-Resource</th>
+
+        </tr>
+        <tr>
+            <td>
+                Resource - Signal + async operation<br>
+                resource - async/await operation<br>
+                usefule for simple api task
+            </td>
+            <td>
+                RX-Resource - Signal + RXJS + observable + pipes etc...<br>
+                RX-Resource - used for complex data handling<br>
+
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <div class="">
+                    <label for="sel1">
+                        Verum resource:
+                    </label>
+                    <select class="form-control" (change)="onChange($event)">
+                        <option default>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div><br>{{noRxResource | json}}
+            </td>
+            <td>
+                <div class="">
+                    <label for="sel1">
+                        with RXJS resource:
+                    </label>
+                    <select class="form-control" (change)="updateUser($event)">
+                        <option default>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div><br>{{yesRxResource|json }}
+            </td>
+
+        </tr>
+    </tbody>
+</table>
