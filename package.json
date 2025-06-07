@@ -1,5 +1,5 @@
 {
-  "name": "angular19-golang",
+  "name": "angular19_golang",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:angular19_golang": "node dist/angular19_golang/server/server.mjs"
+    "dev:ssr": "ng run angular19_golang:serve-ssr",
+    "serve:ssr": "node dist/angular19_golang/server/main.js",
+    "build:ssr": "ng build && ng run angular19_golang:server"
   },
   "private": true,
   "dependencies": {
@@ -22,8 +24,11 @@
     "@angular/router": "^19.1.0",
     "@angular/ssr": "^19.1.8",
     "@ngrx/store": "^19.2.0",
-    "@nguniversal/express-engine": "^7.0.2",
+    "@nguniversal/builders": "^16.2.0",
     "@primeng/themes": "^19.0.10",
+    "@sentry/angular": "^9.24.0",
+    "@sentry/angular-ivy": "^7.120.3",
+    "@sentry/tracing": "^7.120.3",
     "express": "^4.18.2",
     "primeicons": "^7.0.0",
     "primeng": "^19.0.10",

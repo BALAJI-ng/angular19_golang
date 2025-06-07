@@ -1,0 +1,25 @@
+<ol>
+    <li *ngFor="let item of Items">{{item}}</li>
+</ol>
+<hr>
+Filter A"" includess" {{filteredAdvika}}<br>
+Filter D -- startes with {{filteredDeepa}}<br>
+sort array - {{soretedData}} <br>
+AAA push will add to end of array: {{pushA}}<br>
+pop: pop will remove first element: {{popA}}<br>
+slice(0,1): {{this.sliceA}}<br>
+splice (0,1) -- modify original array: {{spliceA}}
+
+<hr>
+Linked Lists
+<input id="txt" [(ngModel)]="items " /><br>
+<button (click)="onSubmit(items )">Add Items</button>
+<ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+<button (click)="throwTestError()">Test Sentry Error</button>
+
+<hr>
+
+RXJS Map<br>

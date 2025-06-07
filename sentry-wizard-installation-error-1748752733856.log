@@ -1,0 +1,28 @@
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE could not resolve
+npm ERR! 
+npm ERR! While resolving: @nguniversal/builders@16.2.0
+npm ERR! Found: @angular-devkit/build-angular@19.2.5
+npm ERR! node_modules/@angular-devkit/build-angular
+npm ERR!   dev @angular-devkit/build-angular@"^19.1.8" from the root project
+npm ERR! 
+npm ERR! Could not resolve dependency:
+npm ERR! peer @angular-devkit/build-angular@"^16.0.0 || ^16.1.0-next.0" from @nguniversal/builders@16.2.0
+npm ERR! node_modules/@nguniversal/builders
+npm ERR!   @nguniversal/builders@"^16.2.0" from the root project
+npm ERR! 
+npm ERR! Conflicting peer dependency: @angular-devkit/build-angular@16.2.16
+npm ERR! node_modules/@angular-devkit/build-angular
+npm ERR!   peer @angular-devkit/build-angular@"^16.0.0 || ^16.1.0-next.0" from @nguniversal/builders@16.2.0
+npm ERR!   node_modules/@nguniversal/builders
+npm ERR!     @nguniversal/builders@"^16.2.0" from the root project
+npm ERR! 
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR! 
+npm ERR! 
+npm ERR! For a full report see:
+npm ERR! C:\Users\BALAJI\AppData\Local\npm-cache\_logs\2025-06-01T04_38_51_249Z-eresolve-report.txt
+
+npm ERR! A complete log of this run can be found in: C:\Users\BALAJI\AppData\Local\npm-cache\_logs\2025-06-01T04_38_51_249Z-debug-0.log

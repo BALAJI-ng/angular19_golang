@@ -25,6 +25,7 @@ import { AuthService } from '../rbac/auth.service';
 import { AutoCompleteModule } from 'primeng/autocomplete'; import { BrowserModule } from '@angular/platform-browser';
 
 import { audit, fromEvent, interval } from 'rxjs';
+import { DataStructureComponent } from "../data-structure/data-structure.component";
 
 @Component({
   selector: 'app-home',
@@ -34,13 +35,13 @@ import { audit, fromEvent, interval } from 'rxjs';
     CssCombinatorsComponent,
     FormsModule, CommonModule,
     AutoCompleteModule,
-    ResourceAndRxResourceComponent, Rxjs3Component, Rxjs4Component],
+    ResourceAndRxResourceComponent, Rxjs3Component, Rxjs4Component, DataStructureComponent],
 
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 
-export class HomeComponent implements OnInit { 
+export class HomeComponent implements OnInit {
 
 
   //for
